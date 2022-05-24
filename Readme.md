@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anna Slepneva](https://up.htmlacademy.ru/htmlcss/34/user/2105623).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
