@@ -134,9 +134,67 @@
     <select class="select-control" aria-label="Сортировка">
         <option value="popular">Популярное</option> <!--В стайлгайде нет опций сортировки-->
       </select>
-      
-    </section>
 
+      <!--Карточки товаров-->
+      <ul class="product-list">
+      <li class="product-card">
+          <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="" alt="">
+              <h4 class="product-card-title">Любительская селфи-палка</h4>
+          </a>
+          <b class="product-card-price">500 ₽</b>
+      </li>
+
+      <li class="product-card">
+        <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="" alt="">
+            <h4 class="product-card-title">Профессиональная селфи-палка</h4>
+        </a>
+        <b class="product-card-price">1500 ₽</b>
+    </li>
+
+    <li class="product-card">
+        <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="" alt="">
+            <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
+        </a>
+        <b class="product-card-price">2500 ₽</b>
+    </li>
+
+    <li class="product-card">
+        <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="" alt="">
+            <h4 class="product-card-title">Селфи-палка следуй за мной</h4>
+        </a>
+        <b class="product-card-price">1 500 ₽</b>
+    </li>
+      </ul>
+      
+      <button class="product-card-load more" type="button">Загрузить еще</button>
+
+      <!--Пагинация-->
+<button class="button pagination-backward" type="button">Назад</button>
+<ul class="pagination">
+</li>
+<li class="pagination-item">
+  <a class="pagination-link pagination-current">1</a>
+</li>
+<li class="pagination-item">
+  <a class="pagination-link" href="#">2</a>
+</li>
+<li class="pagination-item">
+  <a class="pagination-link" href="#">3</a>
+</li>
+<li class="pagination-item">
+  <a class="pagination-link" href="#">_</a> <!--Вопрос как вевстать многоточие, предполагающее несколько страниц от 4 до 14?-->
+</li>
+<li class="pagination-item">
+  <a class="pagination-link" href="#">15</a>
+</li>
+      
+</ul>
+<button class="button pagination-forward" type="button">вперед</button>
+    </section>
     </main>
 
     <!--Подвал сайта-->
@@ -160,6 +218,7 @@
             <a class="button" href="#">Контакты</a>
           </li>
         </ul>
+        
         </section>
   
         <section class="footer-social">
