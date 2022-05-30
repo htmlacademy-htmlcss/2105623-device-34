@@ -11,7 +11,7 @@
               <img src="#" width="110" height="30" alt="Логотип компании Device">
             </a>
             <div class="header-tabs">
-              <form action="#" method="post">
+              <form action="https://echo.htmlacademy.ru/" method="post">
                 <input type="search" placeholder="Текст поиска">
                 <button type="submit"></button>
               </form>
@@ -74,6 +74,62 @@
 </header>
 <section class="catalog-products-monopods">
     <h2 class="visually-hidden">Список товаров категории с фильтрами</h2>
+
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+        <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+                <li class="catalog filter-item">
+                <label class="control">
+                <input class="control-input" type="checkbox" name="black" checked>Черный
+            </label>
+                </li>
+
+                <li class="catalog filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="white" checked>Белый
+                </label>
+                    </li>
+
+                 <li class="catalog filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="blue">Синий
+                    </label>
+                </li>
+                    
+                <li class="catalog filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="red">Красный
+                    </label>
+                </li>
+                        
+                <li class="catalog filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="black">Черный
+                    </label>
+                    </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+        </fieldset>
+            <ul class="catalog-filter-list">
+                <li class="catalog filter-item">
+                <label class="control">
+                <input class="control-input" type="checkbox" name="yes" checked>есть
+            </label>
+                </li>
+
+                <li class="catalog filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="no">Нет
+                </label>
+                    </li>
+            </ul>
+        <button class="button" type="submit">Показать</button>
+    </form>
 </section>
     </main>
 
