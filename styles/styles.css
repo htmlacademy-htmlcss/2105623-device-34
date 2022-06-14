@@ -40,7 +40,17 @@ body {
     background-color: #FFFFFF;
 }
 
-.navigation {
+.user-menu-link {
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+.navigation-link {
     font-family: "Raleway", sans-serif;
     line-height: 21px;
     font-weight: 800;
