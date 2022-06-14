@@ -34,3 +34,18 @@ body {
 }
 
 /* Pages */
+
+.main-header {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.navigation {
+    font-family: "Raleway", sans-serif;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
