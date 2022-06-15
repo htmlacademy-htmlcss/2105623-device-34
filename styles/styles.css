@@ -2,7 +2,7 @@
     font-family: "rubik";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+    src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -11,7 +11,7 @@
     font-family: "rubik";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+    src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -20,7 +20,7 @@
     font-family: "raleway";
     font-style: normal;
     font-weight: 800;
-    src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+    src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -29,11 +29,11 @@ body {
     font-family: "rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
+    color: #444444;
     background-color: #FFFFFF;
 }
 
-.button{
+.button {
     font-family: "raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -84,4 +84,110 @@ body {
     float: none;
     text-align: left;
     display: block;
+}
+
+.title {
+    font-family: "rubik", sans-serif;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+.visually-hidden {
+    display: none;
+}
+
+.advantages-number-title {
+    font-family: "rubik";
+    line-height: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/*Catalog with icons on yellow*/
+
+.main-category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-category-link {
+    text-decoration: none;
+}
+
+.main-category-text {
+    font-family: "raleway";
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.32px;
+}
+
+/*big delivery button*/
+.delivery-button {
+    font-family: "raleway";
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contacts-phone-body {
+    font-family: "rubik";
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444
+}
+
+
+.newsletter {
+    background-color: #F0F0F0
+}
+
+/*Footer*/
+.page-footer {
+    color: #FFFFFF;
+    background-color: #444444;
+}
+
+.footer-menu-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.address-text {
+    font-family: "rubik";
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.buttonlink {
+    font-family: "raleway";
+    line-height: 21px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contacts-phone {
+    font-family: "rubik";
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
