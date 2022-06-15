@@ -191,3 +191,81 @@ body {
     font-weight: 400;
     color: #FFFFFF;
 }
+
+/*Catalog page*/
+
+.inner-header-title {
+    font-family: "raleway";
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: left;
+    color: #000000;
+}
+.breadcrumbs {
+    color: #000000;
+}
+
+.breadcrumbs-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog-products-monopods {
+    background-color: #F0F0F0;
+}
+
+.catalog-filter-title {
+    font-family: "raleway";
+    line-height: 18px;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.product-block {
+    background-color: #F0F0F0;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    font-family: "rubik";
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+}
+
+.product-card-price {
+    font-family: "rubik";
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    text-align: right;
+}
+
+.product-card {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pagination-link {
+    color: #444444;
+    text-decoration: none;
+}
+.pagination-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pagination-backward {
+    background-color: transparent;
+}
+.pagination-forward {
+    background-color: transparent;
+}
