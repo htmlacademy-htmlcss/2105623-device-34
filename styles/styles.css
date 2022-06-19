@@ -2,7 +2,7 @@
     font-family: "rubik";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+    src: url("./fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -11,7 +11,7 @@
     font-family: "rubik";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+    src: url("./fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -20,12 +20,19 @@
     font-family: "raleway";
     font-style: normal;
     font-weight: 800;
-    src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+    src: url("./fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
-
+html {
+    height: 100%;
+}
 
 body {
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -49,9 +56,27 @@ body {
 /* Pages */
 
 .main-header {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
     color: #FFFFFF;
     background-color: #FFFFFF;
+
 }
+
+.logo {
+    float: left;
+    display: block;
+    width: 145px;
+    height: 36px;
+}
+
+.header-tabs {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
 
 .user-menu-link {
     font-family: "rubik", sans-serif;
@@ -60,6 +85,12 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: none;
+}
+
+.navigation {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 
@@ -86,6 +117,13 @@ body {
     display: block;
 }
 
+.page-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.main-container {
+    flex-grow: 1;
+}
 .title {
     font-family: "rubik", sans-serif;
     line-height: 30px;
