@@ -66,7 +66,8 @@ body {
 
 .main-header {
     display: flex;
-    width: 1160px;
+    width: 100%;
+    max-width: 1160px;
     margin: 0 auto;
     margin-top: 19px;
     flex-direction: column;
@@ -76,11 +77,11 @@ body {
 }
 
 .logo {
-    float: left;
     display: block;
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     height: 36px;
-    padding: 0 ex;
+    padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -88,7 +89,8 @@ body {
 .header-tabs {
     display: flex;
     flex-direction: row;
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -123,7 +125,6 @@ body {
     text-align: center;
     align-items: center;
     padding: 0;
-    font-family: inherit;
 }
 .menu-form-button {
     display: flex;
@@ -144,8 +145,6 @@ body {
 }
 .login {
     display: flex;
-    width: 231px;
-    height: 30px;
     flex-grow: 0;
     margin: 0 auto;
     padding-left: 26px;
@@ -154,10 +153,21 @@ body {
 }
 .user-menu {
     display: flex;
-    width: 1040px;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
-    height: 30px
+    margin-left: 12px;
+    column-gap: 12px;
+    padding: 0;
+    list-style-type: none;
+    width: calc(100% - 519px);
+    align-items: center;
+}
+
+.user-menu-li-fr {
+    display: flex;
+    margin-right: auto;
+
 }
 
 .user-menu-link {
@@ -173,8 +183,6 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 0;
-    height: 30px;
-    width: 240px;
     flex-grow: 0;
     margin: 0 auto;
     padding-top: 5px;
@@ -183,8 +191,10 @@ body {
 }
 .navigation {
     display: flex;
-    width: 1160px;
+    width: 100%;
+    max-width: 1160px;
     margin: 0 auto;
+    column-gap: 12px;
 }
 
 
