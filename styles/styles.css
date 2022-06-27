@@ -335,6 +335,23 @@ body {
     padding: 0;
 }
 
+.slider-title {
+    padding-bottom: 29px;
+}
+
+.slider-text {
+    padding-bottom: 51px;
+}
+
+.advantages-number-title {
+    padding-bottom: 12px;
+    margin: 0;
+}
+
+.slider-more-button {
+    padding-bottom: 49px;
+}
+
 /*Catalog with icons on yellow*/
 
 .main-category-list {
