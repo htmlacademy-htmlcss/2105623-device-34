@@ -298,10 +298,50 @@ body {
     font-weight: 400;
     color: #000000;
 }
+.slideshow-container {
+    display: flex;
+    max-width: 1160px;
+    margin: auto;
+    position: relative;
+}
+.slide-one {
+    display: flex;
+    margin: auto;
+
+}
+.slide-two {
+    display: none;
+}
+.slide-three {
+    display: none;
+}
+.slide-right-column {
+    font-display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin-left: 40px;
+    margin-top: 121px;
+}
+.advantages-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.slider-button {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
 
 /*Catalog with icons on yellow*/
 
 .main-category-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
