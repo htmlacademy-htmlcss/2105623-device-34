@@ -92,8 +92,8 @@ body {
     width: 100%;
     max-width: 1040px;
     margin: 0 auto;
+    margin-bottom: 30px;
     align-items: center;
-    align-content: center;
 }
 
 .menu-form {
@@ -167,7 +167,6 @@ body {
 .user-menu-li-fr {
     display: flex;
     margin-right: auto;
-
 }
 
 .user-menu-link {
@@ -185,8 +184,6 @@ body {
     margin-left: 0;
     flex-grow: 0;
     margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
     justify-content: flex-end;
 }
 .navigation {
@@ -207,7 +204,59 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1040px;
+    font-family: "raleway", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    margin: 0 auto;
+    align-items: center;
+}
 
+.dropbtn {
+    appearance: none;
+    display: flex;
+    font-family: "raleway", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    text-align: left;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    flex-direction: row;
+    flex-grow: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.dropdown-content {
+    display: none;
+}
+.navigation-link-box {
+    display: flex;
+    margin: 0 auto;
+    margin-right: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 45px;
+}
 /*Style links inside the dropdown menu columns*/
 .column a {
     font-family: "rubik", sans-serif;
