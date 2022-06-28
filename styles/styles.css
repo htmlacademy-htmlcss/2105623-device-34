@@ -59,7 +59,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3.2px;
-
+    padding: 0;
 }
 
 /* Pages */
@@ -397,8 +397,8 @@ body {
 .tab {
     display: flex;
     flex-direction: column;
-    width: 287px;
-    height: 319px;
+    max-width: 287px;
+    max-height: 319px;
     order: 0;
     flex-grow: 0;
     align-items: flex-start;
@@ -406,10 +406,12 @@ body {
     gap: 35px;
 }
 .tablinks{
+    appearance: none;
     display: inline-block;
     flex-wrap: wrap;
     border: none;
     text-align: center;
+    padding: 0;
     width: 152px;
     height: 20px;
 }
@@ -425,7 +427,24 @@ body {
     margin-right: 63;
     margin-left: 116px;
 }
-
+.tabcontent-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-bottom: 34px;
+}
+.tabcontent-text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 452px;
+    margin: 0;
+}
 .warranty {
     display: none;
 }
