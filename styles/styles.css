@@ -337,10 +337,17 @@ body {
 
 .slider-title {
     padding-bottom: 29px;
+    margin: 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .slider-text {
     padding-bottom: 51px;
+    margin: 0;
 }
 
 .advantages-number-title {
