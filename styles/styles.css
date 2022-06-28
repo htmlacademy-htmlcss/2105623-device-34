@@ -437,7 +437,7 @@ body {
     padding-bottom: 34px;
 }
 .tabcontent-text{
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -454,15 +454,38 @@ body {
 }
 
 /*big delivery button*/
-.delivery-button {
-    font-family: "raleway";
-    line-height: 24px;
-    font-size: 20px;
-    font-weight: 800;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
+
+.big-delivery-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    max-width: 1160px;
+    max-height: 100px;
+    background-color: #F0F0F0;
 }
+.delivery-button {
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    justify-content: center;
+    max-width: 910px;
+    max-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
 
 .contacts-phone-body {
     font-family: "rubik";
@@ -472,11 +495,121 @@ body {
     color: #444444
 }
 
-
-.newsletter {
-    background-color: #F0F0F0
+.about-contacts {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1160px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    gap: 108px
 }
 
+.aboutus {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 50%;
+}
+
+.aboutus-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+.aboutus-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.aboutus-text>p {
+    padding-bottom: 30;
+}
+
+.aboutus-delivery-list {
+    padding-bottom: 30;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    list-style-type:none;
+    line-height: 20px;
+}
+
+.contacts-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-bottom: 48px;
+}
+.contacts-subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+    margin-bottom: 15px;
+}
+.contacts-schedule {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.newsletter {
+    background-color: #F0F0F0;
+    padding: 0;
+    padding-top: 64px;
+    padding-left: 147px;
+    padding-right: 133px;
+    padding-bottom: 56px;
+}
+.newsletter-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 152px;
+}
+
+.newsletter-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+.newsletter-form-text {
+    margin: 0;
+    padding: 0;
+}
+.newsletter-form-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 144px;
+}
 /*Footer*/
 .page-footer {
     color: #FFFFFF;
