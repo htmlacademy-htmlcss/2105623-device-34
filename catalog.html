@@ -12,54 +12,56 @@
         <header class="main-header">
             <!-- Шапка сайта -->
             <a class="logo" href="#">
-                <img src="images/logo_header-2.svg" width="145" height="36" alt="Логотип компании Device">
+              <img src="images/logo_header-2.svg" width="145" height="36" alt="Логотип компании Device">
             </a>
             <div class="header-tabs">
-                <form action="https://echo.htmlacademy.ru/" method="post">
-                    <input type="search" placeholder="Текст поиска">
-                    <button type="submit"></button>
-                </form>
-                <ul class="user-menu">
-                    <li>
-                        <a class="user-menu-link" href="#">Войти</a>
-                    </li>
-                    <li>
-                        <a class="user-menu-link" href="#">Сравнить</a>
-                    </li>
-                    <li>
-                        <a class="user-menu-link notification" href="#">
-                            <span>Корзина</span>
-                            <span class="badge">2</span>
-                        </a>
-                    </li>
-                </ul>
+              <form class="menu-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="search" class="menu-form-input" placeholder="Текст поиска">
+                <button class="menu-form-button" type="submit">Найти</button>
+              </form>
+              <ul class="user-menu">
+                <li class="user-menu-li-fr">
+                  <a class="user-menu-link" href="#">Войти</a>
+              </li>
+              <li class="user-menu-li-sd">
+                  <a class="user-menu-link" href="#">Сравнить</a>
+              </li>
+              <li class="user-menu-li-thd">
+      <a class="user-menu-link notification side" href="#">
+                    <span>Корзина</span>
+                    <span class="badge">2</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <nav class="navigation">
-                <div class="dropdown">
-                    <button class="dropbtn" type="button">Каталог товаров
-                    </button>
-                    <div class="dropdown-content">
-                        <div class="row">
-                            <div class="column">
-                                <a href="#">Виртуальная реальность</a>
-                                <a href="#">Моноподы для селфи</a>
-                                <a href="#">Экшн-камеры</a>
-                            </div>
-                            <div class="column">
-                                <a href="#">Фитнес-браслеты</a>
-                                <a href="#">Умные часы</a>
-                            </div>
-                            <div class="column">
-                                <a href="#">Квадракоптеры</a>
-                            </div>
-                        </div>
+              <div class="dropdown">
+                <button class="dropbtn" type="button">Каталог товаров
+                </button>
+                <div class="dropdown-content">
+                  <div class="row">
+                    <div class="column">
+                      <a href="#">Виртуальная реальность</a>
+                      <a href="#">Моноподы для селфи</a>
+                      <a href="#">Экшн-камеры</a>
                     </div>
-                    <a class="navigation-link" href="#">Доставка</a>
-                    <a class="navigation-link" href="#">Гарантия</a>
-                    <a class="navigation-link" href="#">Контакты</a>
+                    <div class="column">
+                      <a href="#">Фитнес-браслеты</a>
+                      <a href="#">Умные часы</a>
+                    </div>
+                    <div class="column">
+                      <a href="#">Квадракоптеры</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="navigation-link-box">
+                <a class="navigation-link" href="#">Доставка</a>
+                <a class="navigation-link" href="#">Гарантия</a>
+                <a class="navigation-link" href="#">Контакты</a>
+                </div>
+              </div>
             </nav>
-        </header>
+          </header>
 
         <main class="main-inner">
             <header class="inner-header">
@@ -210,57 +212,65 @@
             </section>
 
         </main>
+ <!--Подвал сайта-->
+ <footer class="page-footer">
+    <section class="footer-content">
+    <div class="footer-logo-section">
+    <a class="footer-logo" href="#">
+      <img src="images/logo_footer-2.svg" width="145" height="36" alt="Логотип компании Device">
+    </a>
+    <address class="footer-contacts-address">
+      <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    </address>
+    </div>
 
-        <!--Подвал сайта-->
-        <footer class="page-footer">
-            <a class="footer-logo" href="#">
-                <img src="images/logo_footer-2.svg" width="145" height="36" alt="Логотип компании Device">
-            </a>
-            <address class="footer-contacts-address">
-                <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
+    <div class="footer-social-menu">
+    <div class="footer-menu">
+      <ul class="footer-menu-links">
+        <li class="footer-menu-item">
+          <a class="buttonlink" href="#">Доставка</a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="buttonlink" href="#">Гарантия</a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="buttonlink" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
 
-            <div class="footer-menu">
-                <ul class="footer-menu-links">
-                    <li class="footer-menu-item">
-                        <a class="buttonlink" href="#">Доставка</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="buttonlink" href="#">Гарантия</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="buttonlink" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="buttonlink" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="buttonlink" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="buttonlink" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
 
-            <div class="footer-social">
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a class="buttonlink" href="#">
-                            <span class="visually-hidden">Телеграм</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="buttonlink" href="#">
-                            <span class="visually-hidden">Youtube</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="buttonlink" href="#">
-                            <span class="visually-hidden">Твиттер</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-contact-phone">
-                <a class="contacts-phone" href="tel:+78121212">+7(812)812-12-12</a>
-            </div>
+    <div class="footer-phone-logo">
+    <div class="footer-contact-phone">
+      <a class="contacts-phone" href="tel:+78121212">+7(812)812-12-12</a>
+    </div>
 
-            <a class="footer-htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank">
-                <img src="images/logo_htmlacademy-2.svg" width="115" height="33" alt="Логотип HTML-академии">
-            </a>
-        </footer>
+    <a class="footer-htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank">
+      <img src="images/logo_htmlacademy-2.svg" width="115" height="33" alt="Логотип HTML-академии">
+    </a>
+    </div>
+    </section>
+  </footer>
     </body>
 
 </html>
