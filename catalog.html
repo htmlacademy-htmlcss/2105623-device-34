@@ -22,12 +22,12 @@
               <ul class="user-menu">
                 <li class="user-menu-li-fr">
                   <a class="user-menu-link" href="#">Войти</a>
-              </li>
-              <li class="user-menu-li-sd">
+                </li>
+                <li class="user-menu-li-sd">
                   <a class="user-menu-link" href="#">Сравнить</a>
-              </li>
-              <li class="user-menu-li-thd">
-      <a class="user-menu-link notification side" href="#">
+                </li>
+                <li class="user-menu-li-thd">
+                  <a class="user-menu-link notification side" href="#">
                     <span>Корзина</span>
                     <span class="badge">2</span>
                   </a>
@@ -55,15 +55,16 @@
                   </div>
                 </div>
                 <div class="navigation-link-box">
-                <a class="navigation-link" href="#">Доставка</a>
-                <a class="navigation-link" href="#">Гарантия</a>
-                <a class="navigation-link" href="#">Контакты</a>
+                  <a class="navigation-link" href="#">Доставка</a>
+                  <a class="navigation-link" href="#">Гарантия</a>
+                  <a class="navigation-link" href="#">Контакты</a>
                 </div>
               </div>
             </nav>
           </header>
 
         <main class="main-inner">
+            <div class="page-container">
             <header class="inner-header">
                 <h1 class="inner-header-title">Моноподы для селфи</h1>
                 <ul class="breadcrumbs">
@@ -82,7 +83,7 @@
                 <h2 class="visually-hidden">Список товаров категории с фильтрами</h2>
 
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
+                    <h3 class="catalog-filter-title">Фильтр:</h3>
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Цвет</legend>
                         <ul class="catalog-filter-list">
@@ -137,10 +138,11 @@
                     </ul>
                     <button class="button" type="submit">Показать</button>
                 </form>
+                <div class="catalog-right-column">
                 <div class="sorting-continer">
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">Популярное</option>
-                        <!--В стайлгайде нет опций сортировки-->
+                    <h3 class="area-lable">Сортировка:</h3>
+                    <select class="select-control">
+                    <option value="popular">Популярное</option>
                     </select>
                 </div>
 
@@ -186,6 +188,7 @@
                 <button class="product-card-loadmore" type="button">Загрузить еще</button>
 
                 <!--Пагинация-->
+            <div class="pagination-block">
                 <button class="button pagination-backward" type="button">Назад</button>
                 <ul class="pagination">
 
@@ -199,7 +202,7 @@
                         <a class="pagination-link" href="#">3</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link" href="#">_</a>
+                        <a class="pagination-link" href="#">...</a>
                         <!--Вопрос как вевстать многоточие, предполагающее несколько страниц от 4 до 14?-->
                     </li>
                     <li class="pagination-item">
@@ -208,12 +211,14 @@
 
                 </ul>
                 <button class="button pagination-forward" type="button">вперед</button>
-
+            </div>
             </section>
-
+            </div>
+        </div>
         </main>
  <!--Подвал сайта-->
  <footer class="page-footer">
+    <div class="page-footer-container">
     <section class="footer-content">
     <div class="footer-logo-section">
     <a class="footer-logo" href="#">
@@ -270,6 +275,7 @@
     </a>
     </div>
     </section>
+    </div>
   </footer>
     </body>
 
