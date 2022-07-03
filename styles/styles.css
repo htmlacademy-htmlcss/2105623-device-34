@@ -748,6 +748,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .inner-header {
     display: flex;
     flex-direction: column;
@@ -774,6 +775,7 @@ body {
     display: flex;
     text-decoration: none;
 }
+
 .catalog-filter {
     display: flex;
     flex-direction: column;
@@ -795,6 +797,7 @@ body {
     text-transform: uppercase;
     margin-top: 25px;
 }
+
 .sorting-continer {
     display: flex;
     flex-direction: row;
@@ -808,6 +811,7 @@ body {
     margin-top: 25.5px;
     margin-left: 60px;
 }
+
 .area-lable {
     font-family: "Raleway";
     font-style: normal;
@@ -844,8 +848,9 @@ body {
     gap: 44px;
     max-width: 840px;
     order: 1;
-flex-grow: 0;
+    flex-grow: 0;
 }
+
 .catalog-products-monopods {
     display: flex;
     background-color: #F0F0F0;
@@ -930,10 +935,12 @@ flex-grow: 0;
     align-self: stretch;
     flex-grow: 0;
 }
+
 .pagination {
     display: flex;
     align-items: center;
 }
+
 .pagination-link {
     color: #444444;
     text-decoration: none;
