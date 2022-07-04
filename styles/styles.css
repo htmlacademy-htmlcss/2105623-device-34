@@ -803,14 +803,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 20px 40px;
     gap: 167px;
     margin: 0;
     max-width: 840px;
     max-height: 70px;
-    margin-top: 25.5px;
-    margin-left: 60px;
 }
+
 
 .area-lable {
     font-family: "Raleway";
@@ -832,23 +831,30 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
+    color: hsl(0, 0%, 0%);
 }
 
-.catalog-right-column {
+.catalog-right-column-productbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
     max-width: 840px;
     margin: 0;
+    padding: 70px 40px 0;
+    background-color: #FFFFFF;
+    padding-bottom: 78px;
 }
 
 .product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 70px 40px 0;
-    gap: 44px;
-    max-width: 840px;
-    order: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    list-style-type: none;
+    padding: 0;
+    gap: 40px;
+    margin: 0, 0, 44px;
     flex-grow: 0;
+    background-color: #FFFFFF;
 }
 
 .catalog-products-monopods {
@@ -869,7 +875,6 @@ body {
     background-color: #F0F0F0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .product-card-link {
@@ -877,6 +882,7 @@ body {
 }
 
 .product-card-title {
+    display: flex;
     font-family: "rubik";
     line-height: 20px;
     font-size: 18px;
@@ -895,10 +901,18 @@ body {
 }
 
 .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+.product-card-image {
+    margin: 0;
+}
+
 
 .product-card-loadmore {
     display: flex;
@@ -919,6 +933,7 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    background-color: transparent;
 }
 
 .pagination-block {
@@ -944,18 +959,18 @@ body {
 .pagination-link {
     color: #444444;
     text-decoration: none;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 40px;
     height: 40px;
     justify-content: center;
-    align-items: center;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    align-items: center;
     opacity: 0.3;
 
 }
