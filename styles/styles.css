@@ -880,15 +880,30 @@ body {
 .product-card-link {
     text-decoration: none;
 }
+.product-card-title-link{
+    text-decoration: none;
+}
 
+.product-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 32px;
+}
 .product-card-title {
     display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     font-family: "rubik";
     line-height: 20px;
     font-size: 18px;
     font-weight: 700;
     color: #000000;
     text-align: left;
+    max-width: 226px;
+    margin: 0;
 }
 
 .product-card-price {
@@ -898,6 +913,10 @@ body {
     font-weight: 400;
     color: #444444;
     text-align: right;
+    max-width: 134px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .product-card {
