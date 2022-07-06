@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
     min-height: 100vh;
     justify-content: space-between;
     font-family: "rubik", sans-serif;
@@ -58,25 +59,53 @@ body {
     font-weight: 800;
     text-align: center;
     color: #000000;
-    background-color: #FFE17F;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3.2px;
-    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.button::before {
+    content:"";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 40%;
+    bottom: 40%;
+    background-color: #FFE17F;
+    z-index: -1;
 }
 
 /* Pages */
+.main-background {
+    position: relative;
+}
 
 .main-header {
     display: flex;
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
-    margin-top: 19px;
+    margin-top: 15px;
     flex-direction: column;
     align-content: center;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: transparent;
+    position: relative;
+}
+.main-background::before {
+    position: absolute;
+    width: 100%;
+    max-width: 1160px;
+    height: 300px;
+    top: 40px;
+    left: 140px;
+    margin: 0 auto;
+    content:"";
+    background: #FFE17F;
 }
 
 .logo {
@@ -87,6 +116,7 @@ body {
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 4px;
 }
 
 .header-tabs {
@@ -101,10 +131,11 @@ body {
 
 .menu-form {
     display: flex;
+    font-style: none;
     height: 40px;
     margin: 0 auto;
     align-content: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -120,7 +151,7 @@ body {
     border: 2px solid #000000;
     border-radius: 50px 0 0 50px;
     align-content: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -137,7 +168,7 @@ body {
     border-radius: 0 50px 50px 0;
     border-left: transparent;
     padding-left: 10px;
-    background-color: #FFFFFF;
+    background-color: transparent;
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -148,14 +179,101 @@ body {
     padding: 0;
 }
 
-.login {
+.user-menu-link {
     display: flex;
     flex-grow: 0;
     margin: 0 auto;
-    padding-left: 26px;
+    padding-left: 53px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-items: center;
 }
+.user-menu-li-fr {
+    position: relative;
+    align-items: center;
+}
+
+.user-menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#000000
+}
+
+.user-menu-li-fr .user-menu-icon {
+    right: auto;
+    left: 26px;
+    margin: auto 0;
+}
+
+.user-menu-li-sd {
+    position: relative;
+    align-items: center;
+}
+.user-menu-compare {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#000000
+}
+
+.user-menu-li-sd .user-menu-compare {
+    right: auto;
+    left: 26px;
+    margin: auto 0;
+}
+.user-menu-li-thd{
+    position: relative;
+    align-items: center;
+}
+.user-menu-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#000000;
+    z-index: 3;
+}
+
+.user-menu-li-thd .user-menu-cart{
+    right: auto;
+    left: 26px;
+    margin: auto 0;
+}
+.notification{
+    z-index: 2;
+    display: inline-block;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+}
+.notification .badge {
+    position: absolute;
+    content: 2;
+    width: 21px;
+    height: 21px;
+    left: 12px;
+    top: 1;
+    border-radius: 50%;
+    background:#FFFFFF;
+    color:#000000;
+    text-align: center;
+    align-items: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    z-index: 4;
+  }
 
 .user-menu {
     display: flex;
@@ -281,13 +399,33 @@ body {
 }
 
 .page-container {
-    width: 1160px;
     margin: 0 auto;
 }
 
 .main-container {
     flex-grow: 1;
+    position: relative;
+
 }
+.main-container::before{
+    position: absolute;
+    content: "01";
+    width: 250px;
+    height: 135px;
+    right: 189px;
+    top: 29px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
 
 .title {
     font-family: "rubik", sans-serif;
@@ -296,11 +434,6 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: none;
-}
-
-
-.visually-hidden {
-    display: none;
 }
 
 .advantages-number-title {
@@ -315,7 +448,7 @@ body {
     display: flex;
     max-width: 1160px;
     margin: auto;
-    position: relative;
+    gap: 40px;
 }
 
 .slide-one {
@@ -354,6 +487,9 @@ body {
 }
 
 .slider-title {
+    display: flex;
+    width: 100%;
+    max-width: 545;
     padding-bottom: 29px;
     margin: 0;
     font-family: "Raleway";
@@ -361,6 +497,7 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    z-index: 3;
 }
 
 .slider-text {
@@ -374,6 +511,12 @@ body {
 }
 
 .slider-more-button {
+    display: flex;
+    width: 100%;
+    max-width: 220px;
+    justify-content:stretch;
+    padding: 0;
+    margin: 0;
     padding-bottom: 49px;
 }
 
@@ -381,12 +524,16 @@ body {
 
 .main-category-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 1160px;
+    gap: 40px;
     text-align: center;
     align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-right: 140px;
+    margin-left: 140px;
     margin-bottom: 70px;
 }
 
@@ -487,6 +634,8 @@ body {
     padding: 0;
     max-width: 1160px;
     max-height: 100px;
+    margin-right: 140px;
+    margin-left: 140px;
     background-color: #F0F0F0;
 }
 
@@ -528,12 +677,13 @@ body {
     max-width: 1160px;
     margin-bottom: 70px;
     margin-top: 70px;
+    margin-right: 140px;
+    margin-left: 140px;
     gap: 108px
 }
 
 .aboutus {
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     width: 50%;
 }
@@ -573,7 +723,14 @@ body {
     line-height: 20px;
     justify-content: space-evenly;
 }
+.aboutus-link {
+    display: flex;
+    max-width: 270px;
+    padding: 0;
+    align-self: flex-start;
+    justify-content: center;
 
+}
 .contacts-title {
     font-family: 'Raleway';
     font-style: normal;
@@ -605,7 +762,14 @@ body {
     flex-direction: column;
     width: 50%;
 }
+ .contacts-link {
+    display: flex;
+    max-width: 259px;
+    padding: 0;
+    align-self: flex-start;
+    justify-content: center;
 
+ }
 
 .newsletter {
     background-color: #F0F0F0;
