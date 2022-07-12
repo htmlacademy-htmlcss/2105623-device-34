@@ -66,6 +66,7 @@ body {
     cursor: pointer;
     margin: 0;
     width: 100%;
+    z-index: 1;
     position: relative;
 }
 .button::before {
@@ -122,8 +123,11 @@ body {
 .header-tabs {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     width: 100%;
     max-width: 1040px;
+    max-height: 30px;
+    align-content: center;
     margin: 0 auto;
     margin-bottom: 30px;
     align-items: center;
@@ -223,17 +227,34 @@ body {
     justify-content: center;
     padding: 0;
 }
-
+.user-menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    max-height: 30px;
+}
 .user-menu-link {
     display: flex;
-    flex-grow: 0;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 146px;
+    max-height: 30px;
+    margin: 0;
+    margin-right: -10px;
     padding-left: 53px;
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
 }
 .user-menu-li-fr {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: flex-start;
+    max-width: 200px;
+    margin-left: 0;
+    padding: 0;
+    flex-wrap: nowrap;
     position: relative;
     align-items: center;
 }
@@ -323,7 +344,6 @@ body {
 .user-menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0 auto;
     margin-left: 12px;
     column-gap: 12px;
@@ -374,7 +394,9 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+.dropdown-icon{
+    margin-left: 7px;
+}
 .dropdown {
     display: flex;
     flex-direction: row;
@@ -1299,6 +1321,7 @@ body {
 
 /*Catalog page*/
 
+
 .inner-header-title {
     font-family: "raleway";
     line-height: 50px;
@@ -1306,6 +1329,8 @@ body {
     font-size: 50px;
     text-align: left;
     color: #000000;
+    margin: 0;
+
 }
 
 .page-container {
@@ -1319,9 +1344,53 @@ body {
     max-width: 1079px;
     margin: 0;
     margin-left: 200px;
-    margin-bottom: 35px;
+    margin-bottom: 73px;
+}
+.main-background-catalog {
+    position: relative;
+}
+.main-background-catalog::before {
+    position: absolute;
+    width: 100%;
+    max-width: 1160px;
+    height: 186px;
+    top: 40px;
+    left: 140px;
+    margin: 0 auto;
+    content:"";
+    background: #FFE17F;
+}
+.user-menu-link-catalog {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    flex-grow: 1;
+    padding-left: px;
+    position: relative;
+    color: #000000;
+    white-space: nowrap;
 }
 
+.user-menu-icon-catalog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -88px;
+    margin: auto;
+    fill:#000000
+
+}
+.user-menu-link-catalog-log {
+    color: #000000;
+    opacity: 0.3;
+    justify-self: start;
+}
+
+.inner-header-title {
+    margin-top: 73px;
+    margin-bottom: 16px;
+}
 .breadcrumbs {
     color: #000000;
     display: flex;
@@ -1335,31 +1404,240 @@ body {
 }
 
 .breadcrumbs-link {
-    color: inherit;
+    color: #000000;
     display: flex;
     text-decoration: none;
+    align-items: center;
+}
+.breadcrumbs-item {
+    position: relative;
+    margin-right: 32px;
+    list-style-type: none;
+  }
+
+.breadcrumbs-item::after {
+    position: absolute;
+    top: -2px;
+    right: -20px;
+    width: 0;
+    height: 0;
+    background-color: #000000;
+    content: url(../images/breadcrumbs.svg);
 }
 
+
+.breadcrumbs-item:last-child::after {
+    content: none;
+}
+
+.breadcrumbs-link {
+    color: #000000;
+}
 .catalog-filter {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    border: none;
-    align-items: flex-start;
-    padding: 0 0 0 60px;
-    gap: 35px;
-    max-width: 320px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 140px;
+    width: 200px;
 }
+.catalog-filter-group {
+    width: 200px;
 
-.catalog-filter-title {
-    font-family: "Raleway";
+}
+.catalog-filter-group-title{
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.filter-rectangle {
+    width: 200px;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+.filter-rectangle::after {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    content: "";
+    z-index: 2;
+}
+
+.catalog-filter-title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
     margin-top: 25px;
+    margin-bottom: 20px;
+}
+.range-scale {
+    position: relative;
+    height: 2px;
+    margin-bottom: 11px;
+    background-color: #DCDCDC;
+}
+
+.range-bar {
+    position: absolute;
+    height: 2px;
+    background-color: #000000;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #EBEBEB;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background-color: #EBEBEB;
+    border: 2px solid #000000;
+    opacity: 0.5;
+}
+.range-toggle:focus {
+    background: #EBEBEB;
+    border: 2px solid #000000;
+}
+.range-toggle:active {
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+.toggle-min {
+    top: -8px;
+    left: -10px;
+}
+
+.toggle-max {
+    top: -8px;
+    right: -10px;
+}
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.catalog-filter-label {
+    display: flex;
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.3;
+    justify-content: space-between;
+}
+
+.range-input {
+    width: 30px;
+    padding: 0 2px;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.catalog-filter-group:not(:last-child){
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    border: none;
+}
+
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+
+  .control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+.control:hover .control-mark {
+    border-color: #000000;
+}
+
+.control-input:disabled + .control-mark {
+     border-color: #CCCCCC;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  content:url(../images/Catalog_filter/Tick-catalog-filter.svg);
+  background: #000000
+}
+
+
+.control-mark-radio {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    content: "";
+  }
+
+.control-label {
+    line-height: 22px;
+    font-weight: 700;
+}
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 17px;
 }
 
 .sorting-continer {
@@ -1374,7 +1652,9 @@ body {
     max-height: 70px;
 }
 
-
+.catalog-right-column {
+    width: 840px;
+}
 .area-lable {
     font-family: "Raleway";
     font-style: normal;
@@ -1426,14 +1706,6 @@ body {
     background-color: #F0F0F0;
 }
 
-.catalog-filter-title {
-    font-family: "raleway";
-    line-height: 18px;
-    font-weight: 800;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #000000;
-}
 
 .product-block {
     background-color: #F0F0F0;
