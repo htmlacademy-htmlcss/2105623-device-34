@@ -64,7 +64,7 @@ body {
     letter-spacing: 3.2px;
     border: none;
     cursor: pointer;
-    padding: 5px, 10px;
+    padding: 5px 10px;
     margin: 0;
     width: 100%;
     z-index: 4;
@@ -164,7 +164,6 @@ body {
 
 .menu-form {
     display: flex;
-    font-style: none;
     height: 40px;
     margin: 0 auto;
     align-content: center;
@@ -317,7 +316,6 @@ body {
     outline: 2px solid #af4fff;
 }
 
-
 .user-menu-li-fr {
     display: flex;
     flex-direction: row;
@@ -400,11 +398,11 @@ body {
 
 .notification .badge {
     position: absolute;
-    content: 2;
+    content: "2";
     width: 21px;
     height: 21px;
     left: 12px;
-    top: 1;
+    top: 1px;
     border-radius: 50%;
     background: #FFFFFF;
     color: #000000;
@@ -465,7 +463,7 @@ body {
     box-shadow: none;
     border: none;
     position: relative;
-    justify-content: first baseline;
+    justify-content: flex-end;
 }
 
 .delete-image {
@@ -493,6 +491,10 @@ body {
     margin-right: -20px;
 }
 
+.user-menu-li-thd:hover::before .popover {
+    display: block;
+}
+
 .cart-items-list {
     padding: 0;
 }
@@ -502,7 +504,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px, 14.5px;
+    padding: 25px 14.5px;
     margin-left: 20px;
     width: 280px;
     height: 50px;
@@ -749,9 +751,9 @@ body {
     left: 540px;
 }
 
-.slider-button:hover {
-    background-color: #000000;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+.slider-button svg:hover {
+    fill: #000000;
+    opacity: 0.6;
 }
 
 .slider-button:focus {
@@ -812,7 +814,7 @@ body {
 .slider-title {
     display: flex;
     width: 100%;
-    max-width: 545;
+    max-width: 545px;
     padding-bottom: 29px;
     margin: 0;
     font-family: "Raleway", sans-serif;
@@ -894,7 +896,7 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: row;
-    align-items: top;
+    align-items:center;
     justify-content: space-between;
 }
 
@@ -902,13 +904,13 @@ body {
     display: flex;
     justify-content: center;
     max-width: 1160px;
+    width: 100%;
     gap: 40px;
     text-align: center;
     align-items: top;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-right: 140px;
     margin-left: 140px;
     margin-bottom: 70px;
 }
@@ -939,7 +941,7 @@ body {
 .main-category-image {
     display: flex;
     flex-direction: row;
-    align-content: top;
+    align-content:flex-start;
     justify-content: center;
     width: 160px;
     height: 160px;
@@ -976,7 +978,6 @@ body {
     max-width: 1440px;
     margin-bottom: 70px;
     position: relative;
-    z-index: -1;
 }
 
 .tab-rectangle {
@@ -1013,7 +1014,8 @@ body {
 .vertical-tabbar-container::before {
     position: absolute;
     content: "";
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 289px;
     left: 0;
     top: 102px;
@@ -1039,7 +1041,7 @@ body {
     display: inline-block;
     flex-wrap: wrap;
     border: none;
-    padding: 5px, 10px;
+    padding: 5px 10px;
     width: 152px;
     height: 20px;
     font-family: 'Raleway', sans-serif;
@@ -1202,9 +1204,6 @@ body {
     background-image: url(../images/delivery_button/big-delivery-icon.svg);
 }
 
-.big-delivery-element:hover > .big-delivery-icon {
-    background-image: #FFE17F;
-}
 
 .big-delivery-info-icon {
     width: 40px;
@@ -1536,10 +1535,15 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
+    opacity: 0.3;
+}
+.newsletter-button:active .newsletter-btn-text {
     color: #FFFFFF;
     opacity: 0.3;
 }
-
+.newsletter-button:hover .newsletter-btn-text {
+    color: #FFFFFF;
+}
 .newsletter-button:disabled {
     opacity: 0.6;
 }
@@ -1668,8 +1672,6 @@ body {
     margin-top: 75px;
     justify-content: center;
     position: relative;
-    z-index: 1;
-
 }
 
 .footer-social-item::after {
@@ -1701,15 +1703,15 @@ body {
     fill: #444444;
 }
 
-.social:hover {
+.social path:hover {
     fill: #FFC700;
 }
 
-.social:focus {
+.social path:focus {
     outline: 2px solid #af4fff;
 }
 
-.social::active {
+.social path:active {
     fill: #FFC700;
     fill-opacity: 0.3;
 }
@@ -1808,7 +1810,6 @@ body {
     flex-direction: row;
     height: 30px;
     flex-grow: 1;
-    padding-left: px;
     position: relative;
     color: #000000;
     white-space: nowrap;
@@ -2165,7 +2166,7 @@ body {
     list-style-type: none;
     padding: 0;
     gap: 40px;
-    margin: 0, 0, 44px;
+    margin: 0 0 44px;
     flex-grow: 0;
     background-color: #FFFFFF;
 }
@@ -2325,7 +2326,6 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: none;
 
 }
 
